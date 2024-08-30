@@ -3,14 +3,10 @@ import portrait from "/tpot.jpg";
 ---
 
 <div
-  class="relative mx-12 flex flex-col items-center justify-center gap-12 xl:flex-row xl:justify-between xl:gap-48"
+  class="relative mx-12 flex flex-col items-center justify-center gap-12 xl:flex-row xl:items-start xl:gap-48"
 >
-  <div class="w-full xl:w-1/2">
-    <h1 class="text-xl">
-      Enter chacha's Doodle-Dazzled <span id="scribble" class="font-bold"
-        >Digital Universe!</span
-      >
-    </h1>
+  <div class="w-full xl:w-3/4">
+    <h1 class="text-6xl font-bold">Hello! I'm Chacha👋</h1>
 
     <p id="anim-p" class="p-6 text-main">
       You've stumbled upon <span class="font-bold text-primary">chacha's</span> little
@@ -26,15 +22,10 @@ import portrait from "/tpot.jpg";
       an exploration. Dive in, the pixels are warm!
     </p>
   </div>
-  <div class="flex w-full justify-end xl:w-1/2">
-    <img
-      class="flex h-full justify-end"
-      src={portrait}
-      alt="chachas portrait"
-    />
+  <div class="flex w-full justify-center xl:w-1/2 xl:justify-end">
+    <img src={portrait} alt="chachas portrait" />
   </div>
 </div>
-
 <style>
   #border-path {
     animation: draw 1s forwards 1s ease-out;
@@ -47,50 +38,4 @@ import portrait from "/tpot.jpg";
   }
 </style>
 
-<script>
-  function updatePath() {
-    const textMain = document.querySelector("#anim-p") as HTMLElement;
-    const path = document.querySelector("#border-path") as SVGPathElement;
-
-    if (textMain && path) {
-      path.setAttribute(
-        "d",
-        `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth} v${
-          textMain.offsetHeight / 2
-        }`
-      );
-      const pathLength = path.getTotalLength();
-
-      path.style.strokeDasharray = pathLength.toString();
-      path.style.strokeDashoffset = pathLength.toString();
-    }
-  }
-
-  //Increment
-  function incrementCounter(
-    selector: string,
-    current: number,
-    target: number,
-    duration: number,
-    letter: string = ""
-  ) {
-    let counter = document.getElementById(selector);
-    let stepTime = Math.abs(Math.floor(duration / target));
-    if (current < target && counter) {
-      current++;
-      counter.innerText = current.toString() + letter;
-      setTimeout(
-        () => incrementCounter(selector, current, target, duration, letter),
-        stepTime
-      );
-    }
-  }
-  incrementCounter("art-counter", 0, 85, 1000);
-  incrementCounter("youtube-counter", 0, 328, 1000, "k");
-  incrementCounter("reviews-counter", 0, 250, 1000);
-
-  // Update the path when the page loads
-  window.addEventListener("DOMContentLoaded", updatePath);
-  // Update the path when the window is resized
-  window.addEventListener("resize", updatePath);
-</script>
+<script></script>

@@ -57,7 +57,7 @@ const NavLinks = ({
 export default function Nav() {
   const [toggled, setToggled] = useState(false)
   return (
-    <nav className=" relative mx-8 mb-24 flex items-center justify-between pb-6 pt-12 font-medium md:mx-16 lg:mx-32">
+    <nav className=" relative mx-8 mb-20 flex items-center justify-between pb-6 pt-12 font-medium md:mx-16 lg:mx-32">
       <svg
         className="absolute bottom-0 left-1/2 -translate-x-1/2  "
         width="250"
