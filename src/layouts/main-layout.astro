@@ -1,7 +1,6 @@
 ---
-const { title } = Astro.props
-import "@fontsource-variable/josefin-sans"
-import Nav from "../components/Nav"
+const { title } = Astro.props;
+import Nav from "../components/Nav";
 ---
 
 <html lang="en">
@@ -10,7 +9,7 @@ import Nav from "../components/Nav"
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Digital Artist services, accessible for everyone."
+      content="Collins Chachas Banger portfolio website"
     />
     <meta title={title} />
   </head>
@@ -20,14 +19,13 @@ import Nav from "../components/Nav"
 </html>
 <main>
   <slot />
-  <!-- your content is injected here -->
   <footer class="mt-12 bg-black px-8 py-12 md:px-16 lg:px-32">
     <div></div>
   </footer>
 </main>
-
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
   body {
-    font-family: "Josefin Sans Variable", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 </style>

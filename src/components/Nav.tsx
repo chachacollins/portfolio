@@ -2,9 +2,9 @@ import avatar from "/tpot.jpg"
 import github from "/github.png"
 import ig from "/ig.png"
 import twitter from "/twitter.png"
-import youtube from "/youtube.png"
 import { motion } from "framer-motion"
 import { useState } from "react"
+import "./underline.css"
 
 const navMotion = {
   visible: {
@@ -45,6 +45,7 @@ const NavLinks = ({
       <motion.a
         key={id}
         variants={isMobile ? itemMotion : itemMotionDesktop}
+        id="underw"
         href={href}
       >
         {name}
