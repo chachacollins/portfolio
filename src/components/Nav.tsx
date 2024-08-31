@@ -1,7 +1,7 @@
 import avatar from "/tpot.jpg"
 import github from "/github.png"
 import ig from "/ig.png"
-import twitter from "/twitter.png"
+import spotify from "/spotify.png"
 import { motion } from "framer-motion"
 import { useState } from "react"
 import "./underline.css"
@@ -86,7 +86,7 @@ export default function Nav() {
         <img src={avatar} className="h-[49px] w-[49px] rounded-full" alt="Chacha profile pic" />
         <motion.div className="hidden items-center gap-12 xl:flex">
           <a href="https://github.com/cursedcadaver"><img src={github} className="h-[26px] w-[26px]" alt="github Account" /></a>
-          <a href="https://github.com/cursedcadaver"><img src={twitter} className="h-[26px] w-[26px]" alt="github Account" /></a>
+          <a href="https://github.com/cursedcadaver"><img src={spotify} className="h-[26px] w-[26px]" alt="github Account" /></a>
           <a href="https://www.instagram.com/tame_gazelle"><img src={ig} className="h-[26px] w-[26px]" alt="github Account" /></a>
         </motion.div>
       </motion.div>
