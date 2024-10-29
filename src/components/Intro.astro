@@ -7,7 +7,7 @@ import portrait from "/tpot.jpg";
 >
   <div class="w-full xl:w-3/4">
     <h1 class="text-6xl font-bold">
-      Hello! I'm <span id="name">Chacha</span>👋
+      Hello! I'm <span id="name">Chacha</span>
     </h1>
 
     <p id="anim-p" class="p-6 text-main">
@@ -19,28 +19,26 @@ import portrait from "/tpot.jpg";
       <br />
       I love building tools that are user <span id="e1">friendly</span> ,<span
         id="e2">simple</span
-      > and <span id="e3">delightful</span> 😊
+      > and <span id="e3">delightful</span>.
       <br />
       <br />
-      Okay I lied. I actually love building super complicated tools(Your average
-      developer) and I'm probably tweaking something that was already working just
-      fine😆<br />
-      I like programming in <span id="rust">Rust and C</span> (when I'm not debugging
-      my life away🙃) because I find systems programming infinitely better than mind
-      numbing, crud shitting and Javascript writting world that is "WebDev"🙂
+      Okay I lied. I actually love building super complicated tools so that I can
+      feel more clever than others :-)<br />
+      I like programming in <span id="rust">Zig and C</span> because I find systems
+      programming infinitely better than mind numbing, crud shitting and Javascript
+      writting world that is "WebDev".
       <br />
       <br />
-      Look at some of my projects below. Probably the closest you will ever come
-      to seeing a God write(me)
-      <br />
-      <br />
-
-      Before I forget to mention it I use <span id="vim">Vim btw</span> and also
-      <span id="arch">Arch btw</span> 🤭
+      Feel free to look at some of my projects below.
       <br />
       <br />
 
-      One last thing I swear :) Cats >>> Dogs
+      Before I forget to mention it I use <span id="vim">Vim</span> and
+      <span id="arch">Arch</span> btw.
+      <br />
+      <br />
+
+      One last thing I swear :) Cats >>> Dogs.
     </p>
   </div>
   <div class="flex w-full justify-center xl:w-1/2 xl:justify-end">
@@ -61,18 +59,19 @@ import portrait from "/tpot.jpg";
 
 <script>
   import { annotate, annotationGroup } from "rough-notation";
+  var colorMono = "#7d7d7d";
 
   const a1 = annotate(document.querySelector("#name") as HTMLElement, {
     type: "highlight",
-    color: "#6C22A6",
+    color: "#4d4d4d",
   });
   const a2 = annotate(document.querySelector("#great") as HTMLElement, {
     type: "crossed-off",
-    color: "#6962AD",
+    color: colorMono,
   });
   const a3 = annotate(document.querySelector("#kenya") as HTMLElement, {
     type: "circle",
-    color: "#96E9C6",
+    color: colorMono,
     strokeWidth: 0.9,
   });
 
@@ -81,32 +80,32 @@ import portrait from "/tpot.jpg";
 
   const a4 = annotate(document.querySelector("#e1") as HTMLElement, {
     type: "underline",
-    color: "#83C0C1",
+    color: colorMono,
   });
   const a5 = annotate(document.querySelector("#e2") as HTMLElement, {
     type: "underline",
-    color: "#83C0C1",
+    color: colorMono,
   });
   const a6 = annotate(document.querySelector("#e3") as HTMLElement, {
     type: "underline",
-    color: "#83C0C1",
+    color: colorMono,
   });
 
   const ag1 = annotationGroup([a4, a5, a6]);
   ag1.show();
   const a7 = annotate(document.querySelector("#rust") as HTMLElement, {
     type: "highlight",
-    color: "#6962AD",
+    color: colorMono,
   });
   const ag2 = annotationGroup([a7]);
   ag2.show();
   const a8 = annotate(document.querySelector("#vim") as HTMLElement, {
     type: "underline",
-    color: "#6962AD",
+    color: colorMono,
   });
   const a9 = annotate(document.querySelector("#arch") as HTMLElement, {
     type: "underline",
-    color: "#6962AD",
+    color: colorMono,
   });
   const ag3 = annotationGroup([a8, a9]);
   ag3.show();
