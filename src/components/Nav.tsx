@@ -85,7 +85,7 @@ export default function Nav() {
       >
         <img src={avatar} className="h-[49px] w-[49px] rounded-full" alt="Chacha profile pic" />
         <motion.div className="hidden items-center gap-12 xl:flex">
-          <a href="https://github.com/cursedcadaver"><img src={github} className="h-[26px] w-[26px]" alt="github Account" /></a>
+          <a href="https://github.com/chachacollins"><img src={github} className="h-[26px] w-[26px]" alt="github Account" /></a>
           <a href="https://open.spotify.com/user/jihvp47bnnj3kvjvuc60tx2zc?si=3bc1db437d11496a"><img src={spotify} className="h-[26px] w-[26px]" alt="github Account" /></a>
           <a href="https://www.instagram.com/tame_gazelle"><img src={ig} className="h-[26px] w-[26px]" alt="github Account" /></a>
         </motion.div>
